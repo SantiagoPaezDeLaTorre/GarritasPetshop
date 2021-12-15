@@ -37,6 +37,7 @@ class Carrite {
     localStorage.setItem("MiCarrito", JSON.stringify(cart)); //actualiza el storage
     showEnCarrito(cart.items);
   }
+  
   // Perdon por la funcion comentada, no entiendo por qué me toma cantidad como undefined, cuando hago console log aparece cantidad correctamente...
   // Priorizo aprender a tener una buena nota, por eso lo dejo comentado :
 
@@ -44,6 +45,7 @@ class Carrite {
   //   let productoClickeado = cart.items.find((item) => item.id == e.target.id);
   //   productoClickeado.cantidad++
   // }
+
   limpiarCarrito() {
     for (let producto of cart.items) {
       producto.cantidad = 1;
