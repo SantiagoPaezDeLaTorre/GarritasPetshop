@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+    height: 80px;
+    max-width: 100%;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    margin-bottom: 1%;
+    .headerIzquierda{
+        max-width: 300px;
+        .logo{
+            position: relative;
+            max-width: 100%;
+            animation: 0.6s ease-out slideInFromUp;
+        }
+    }
+    .headerDerecha{
+        display: flex;
+        flex-direction: row;
+        max-width: 300px;
+        .cartIcon{
+            width: 80px;
+            height: 40px;
+            .catCart{
+                position: relative;
+                left: 30%;
+                width: 50%;
+                margin-top: auto;
+            }
+            .catCart:hover{
+                cursor: pointer	;
+            }
+            .openbtn {
+                position: relative;
+                left: 10px;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                i.fa-shopping-cart {
+                    font-size: 30px;  
+                    color: rgb(240, 207, 21);
+                }
+            }
+            .badge {
+                position: absolute;
+                bottom: 15px;
+                padding-left: 9px;
+                padding-right: 9px;
+                -webkit-border-radius: 9px;
+                -moz-border-radius: 9px;
+                border-radius: 9px;
+            }
+            #lblCartCounter {
+                //position: relative;
+                font-size: 16px;
+                background: #2883C7;
+                color: #c6e9fc;
+                padding: 1px 5px;
+                //bottom: 73px;
+                //left: 25px;
+                //top: 26px;
+                //margin-left: -10px;
+            }
+        }
+        .logIn{
+            display: inherit;
+            flex-direction: column;
+            justify-content: flex-end;
+            animation: 0.6s fadeIn;
+            a{
+                font-size: 1.8rem;
+                position: relative;
+                top: 3%;
+                color: rgb(112, 112, 112);
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        .headerDerecha{
+            display: flex;
+            flex-direction: column !important;
+            .cartIcon{
+                .catCart{
+                    width: 45%;
+                    position: relative;
+                    left: 35%;
+                }
+                #lblCartCounter{
+                    left: 5px;
+                    font-size: 1rem;
+                }
+            }
+            .logIn {
+                flex-direction: row;
+                justify-content: right;
+                a{
+                text-justify: right;
+                font-size: 1.6rem;
+                }
+            }
+        } 
+    }
+}

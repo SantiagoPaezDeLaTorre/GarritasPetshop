@@ -1,0 +1,41 @@
+@import 'fuente';
+@import 'header';
+@import 'menu';
+@import 'prefooter';
+@import 'footer';
+@import 'perrosGatosServicios';
+@import 'contactos';
+@import 'banner';
+@import 'modal';
+@import 'carousel';
+@import 'catalogo';
+@import 'colores';
+@import 'error';
+@import 'querys';
+@import 'animaciones';
+
+html{
+    font-size: 67.5%;
+}
+body{
+    font-family: Qsand, Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    animation: 0.5s ease-in opacityIn;
+}
+// Ancho del contenedor del sitio
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+// Imagen usada para indicar las secciones que aún no estan desarrolladas
+.enConstruccion{
+    width: 100%;
+    padding-top: 5%;
+    img{
+        max-width: 40%;
+        display: block;
+        margin: auto;
+    }
+}
+

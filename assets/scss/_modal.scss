@@ -1,0 +1,45 @@
+// MODAL
+.modal{
+    .modal-header{
+        h5{
+            padding-left: 30%;
+            font-size: 1.5rem;
+        }
+        .modal1Title{
+            padding-left:33%;
+        }
+        .modal2Title{
+            padding-left: 28%;
+        }
+        button{
+            color: #2883C7;
+        }
+    }
+    .modal-body{
+        .titulo{
+            p{
+            font-size: 1.6rem;
+            color: #2883C7;
+            font-weight: bold;
+            padding: 1% 0 1% 0;
+            margin-bottom: 0;
+            }
+        }
+        .info{
+            p{
+            font-size: 1.2rem;
+            margin-bottom: 0;
+            }
+        }
+    }
+    .modal-footer{
+        button{
+            background-color: #1E5594;
+            color: whitesmoke;
+            border: none;
+        }
+        button:hover{
+            background-color: #2883C7;
+        }
+    }
+}

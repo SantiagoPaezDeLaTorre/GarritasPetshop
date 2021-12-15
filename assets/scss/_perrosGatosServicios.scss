@@ -1,0 +1,67 @@
+/* PERROS GATOS y SERVICIOS */
+.perrosGatosServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    a{
+        text-decoration: none;
+    }
+    .pic, .picMenosTranslateX{
+        position: relative;
+        margin-top: 10px;
+        padding-inline: 2%;
+        transition: all 2s;
+        width: 45%;
+        img{
+            width: 90%;
+            border-radius: 10px;
+            min-width: 180px;
+        }
+        p{
+            transition: all 2s;
+            font-size: 2.5vw;
+            color: #1E5594;
+        }
+    }
+    .pic:hover, .picMenosTranslateX:hover{
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.1) 40%, #000 50%, rgba(0,0,0,.9) 70%); /*define la transparencia*/
+        -webkit-mask-size: 200%;
+        animation: brillo 1s ease-in-out ; 
+        mask-image: linear-gradient(-75deg, rgba(0,0,0,.1) 40%, #000 50%, rgba(0,0,0,.9) 70%); /*define la transparencia*/
+        mask-size: 200%;
+        transform: scale(1.2);
+    }
+    .pic:hover p{
+        transform: translateX(30%);
+        color: #2883C7;
+    }
+    .picMenosTranslateX:hover p{
+        transform: translateX(18%);
+        color: #2883C7;
+    }
+    .spic:hover p{
+        transform: translateX(10%);
+    }
+}
+
+
+@keyframes brillo {
+    from {
+    -webkit-mask-position: 200%;
+    }
+    to {
+    -webkit-mask-position: 0%;
+    }
+}
+@-webkit-keyframes brillo {
+    from {
+    -webkit-mask-position: 200%;
+    }
+    to {
+    -webkit-mask-position: 0%;
+    }
+}
+

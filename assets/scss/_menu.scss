@@ -1,0 +1,81 @@
+#navegacion{
+    font-size: 3.5vw;
+    padding: 10px 0 4px 0;
+    background-color:whitesmoke;
+    color:whitesmoke;
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    font-family: QsandSemiBold;
+    border-radius: 15px 15px 0 0;
+    animation: 0.8s opacityIn;
+    .navbar-toggler{
+        border-radius: 40%;
+    }
+    .navbar-collapse{
+        background-color: whitesmoke;
+        color: #1E5594;
+        margin-top: 5px;
+        ul{
+            justify-content: center;
+        }
+    }
+    .nav-link{
+        opacity: 1;
+        padding-top: 0;
+        color: #1E5594;
+        font-family: QsandSemiBold;
+    }
+    .nav-link:hover{
+        color: #2883C7;
+    }
+    .dropdown-menu{
+        background-color: whitesmoke;
+        opacity: 0.95;
+        max-width: 200px;
+        border-radius: 15px;
+        z-index: 1001;
+        a{
+            position: relative;
+            color: #1E5594;
+            width: 155px;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+            transform-origin:bottom left;
+            font-size: 2.2vw;
+        }
+        a:hover{
+            background-color: transparent;
+        }
+        li:hover a{
+            font-weight: bold;
+            padding: 3px;
+            font-size: 2.4vw;
+            animation-duration: 2s;
+            color: #2883C7;
+        }
+    }
+    .buscador{
+        z-index: 999;
+    }
+    .btnBuscar{
+        background-color: #1E5594;
+        color: #9DC9E0;
+        font-weight: bold;
+        z-index: 999;
+        border:#1E5594 ;
+    }
+    .btnBuscar:hover{
+        background-color: #2883C7;
+        color: #c6e9fc;
+        transition-duration: 0.5s;
+    }
+    .navbar-toggler-icon{
+        margin: 3px;
+    }
+}
+
+#navegacion.noBanner{
+    border-radius: 15px;
+}

@@ -1,0 +1,232 @@
+.catalogoContainer {
+  max-width: 85%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 0.75rem;
+}
+
+.catalogoContainer .catalogoFiltro {
+  margin-top: 2%;
+  flex-direction: column;
+  width: 25%;
+}
+
+.catalogoContainer .catalogoFiltro .catalogoTitulo h1 {
+  font-size: 2.4vw;
+  width: fit-content;
+  padding: 2px 5px;
+  background-color: #9DC9E0;
+  color: #1E5594;
+  border-radius: 15px;
+}
+
+.catalogoContainer .catalogoFiltro .carri {
+  width: 100%;
+  background-color: whitesmoke;
+  height: 50px;
+}
+
+.catalogoContainer .catalogoFiltro .carri .carritoImg img {
+  position: relative;
+  top: 10px;
+  width: 17%;
+  min-width: 30px;
+  justify-self: flex-start;
+}
+
+.catalogoContainer .catalogoFiltro .carri .carritoImg img:hover {
+  cursor: pointer;
+}
+
+.catalogoContainer .catalogoFiltro .carri .openbtn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+}
+
+.catalogoContainer .catalogoFiltro .carri .openbtn i.fa-shopping-cart {
+  font-size: 30px;
+  color: #f0cf15;
+}
+
+.catalogoContainer .catalogoFiltro .carri .badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 9px;
+}
+
+.catalogoContainer .catalogoFiltro .carri #lblCartCount {
+  position: relative;
+  font-size: 16px;
+  background: #2883C7;
+  color: #c6e9fc;
+  padding: 1px 5px;
+  bottom: 73px;
+  left: 25px;
+  margin-left: -10px;
+}
+
+.catalogoContainer .catalogoFiltro .collection-sort {
+  flex-direction: column;
+}
+
+.catalogoContainer .catalogoFiltro .collection-sort label {
+  font-size: 2vw;
+}
+
+.catalogoContainer .catalogoFiltro .collection-sort select {
+  width: 80%;
+  padding: 2%;
+  border-radius: 15px;
+  border: #c6e9fc;
+  font-size: 1.1vw;
+}
+
+.catalogo {
+  margin-top: 2%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 75%;
+  border-radius: 15px;
+  align-content: flex-start;
+}
+
+.catalogo .item {
+  padding: 5% 2%;
+  width: 33%;
+  border-radius: 15px;
+  align-self: center;
+}
+
+.catalogo .item .itemImg img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.catalogo .item .itemInfo {
+  margin-top: 2%;
+  align-content: center;
+  background-color: #1E5594;
+  border-radius: 15px;
+}
+
+.catalogo .item .itemInfo h5, .catalogo .item .itemInfo h6 {
+  color: #c6e9fc;
+  padding-inline: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  text-align: center;
+  width: 33%;
+  margin-bottom: 2%;
+  padding: 2%;
+  border: none;
+  border-radius: 15px;
+  align-self: center;
+}
+
+.card p {
+  font-size: 1.2vw;
+  color: black;
+}
+
+.card b {
+  font-size: 1.2vw;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card .btn {
+  color: #c6e9fc;
+  font-weight: bold;
+  width: 50%;
+  padding: 8px;
+  background-color: #2883C7;
+  outline: none;
+  border: solid 2px #1E5594;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.card .btn:hover {
+  color: #2883C7;
+  font-weight: bolder;
+  border: solid 2px #2883C7;
+  background-color: #9DC9E0;
+  transition-duration: 0.5s;
+}
+
+.btn:active {
+  background-color: #8d0c0c;
+}
+
+/* SIDEBAR CARRITOU */
+.sidebar {
+  text-align: center;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #515151;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar h3 {
+  color: #9DC9E0;
+}
+
+.sidebar .circle {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar .circle a {
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  color: #9DC9E0;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+  bottom: 12%;
+}
+
+.sidebar .circle:hover {
+  background-color: #686464;
+  box-shadow: 0px 0px 5px 3px #3D3C3C, 0px 0px 5px 3px #3D3C3C;
+}
+
+.sidebar a:hover {
+  color: #c6e9fc;
+}
+
+.sidebar .cart-footer button {
+  color: #9DC9E0;
+  background-color: #2883C7;
+  border: #9DC9E0;
+  padding: 6px;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=catalogo.css.map */
